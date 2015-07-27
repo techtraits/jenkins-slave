@@ -34,7 +34,7 @@ ADD https://get.docker.io/builds/Linux/x86_64/docker-latest /usr/local/bin/docke
 RUN chmod +x /usr/local/bin/docker
 RUN chmod +x /usr/local/bin/docker-wrapper
 
-VOLUME /home/jenkins-slave
+VOLUME /var/lib/docker
 
 #ENV JENKINS_USERNAME jenkins
 #ENV JENKINS_PASSWORD jenkins
