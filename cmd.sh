@@ -10,6 +10,9 @@ fi
 if [ ! -z "$JENKINS_PASSWORD" ]; then
   PARAMS="$PARAMS -password $JENKINS_PASSWORD"
 fi
+if [ ! -z "$SLAVE_EXECUTORS" ]; then
+  PARAMS="$PARAMS -executors $SLAVE_EXECUTORS"
+fi
 if [ ! -z "$JENKINS_MASTER" ]; then
   PARAMS="$PARAMS -master $JENKINS_MASTER"
 else
